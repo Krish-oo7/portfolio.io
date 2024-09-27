@@ -636,7 +636,7 @@ section .container {
   position: absolute;
   width: 150px; /* Adjust size for specific icon */
   height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/giki.png'); /* Path to your specific icon */
+  background-image: url('img/pdpu.png'); /* Path to your specific icon */
   background-size: contain;
   background-repeat: no-repeat;
   left: -180px; /* Adjust positioning for the icon */
@@ -881,7 +881,7 @@ section .container {
   position: absolute;
   width: 150px; /* Adjust size for specific icon */
   height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/nvidia.png'); /* Path to your specific icon */
+  background-image: url('img/aisociety.png'); /* Path to your specific icon */
   background-size: contain;
   background-repeat: no-repeat;
   left: -180px; /* Adjust positioning for the icon */
