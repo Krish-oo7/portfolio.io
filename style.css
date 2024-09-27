@@ -5,29 +5,31 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #0A2F35;
   color: #f0f0f0;
-  position: relative;
-  background: transparent;
+  position: relative; 
+  margin: 0;
+  padding: 0;
+
   
 }
 
 body::before {
   content: "";
-  position: fixed;
+  position: fixed; 
   background: linear-gradient(to bottom, #2A9D8F 0%, #0A2F35 100%);
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
-  height: 100vh;
+  bottom: 0;
   z-index: -1;
 }
 
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   body::before {
-    /* background-attachment: fixed; */
+     background-attachment: fixed; 
   }
-}
+} */
 
 a {
   color: #FFFFFF;
@@ -52,6 +54,19 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  /* background-color: #0A2F35;
+  background: linear-gradient(to bottom, #2A9D8F 0%, #0A2F35 100%);
+  background-size: cover;
+
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 997; */
+  background-color: transparent; /* Avoid conflicting background colors */
+  background: linear-gradient(to bottom, #2A9D8F 0%, #0A2F35 100%);
+  background-size: cover;
   transition: ease-in-out 0.3s;
   position: relative;
   height: 100vh;
@@ -335,7 +350,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/* section {
+/* article {
   position: absolute;
   width: 100%;
   top: 140px;
@@ -351,6 +366,11 @@ section.section-show {
   opacity: 1;
   padding-bottom: 45px;
 } */
+article {
+  min-height: 100vh; 
+  background-color: transparent;
+  padding: 20px;
+}
 
 section .container {
   background: #0A2F3566;
@@ -358,7 +378,7 @@ section .container {
 }
 
 @media (max-width: 768px) {
-  section {
+  article {
     top: 120px;
   }
 
@@ -434,86 +454,11 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding: 70px 0 60px;
-}
-
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.counts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  color: #FFD700;;
-  border-radius: 50px;
-  line-height: 0;
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #fff;
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #FFD700;;
-}
-
-/*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
+.interests.container {
+  margin-top: 40px; /* Adds gap above the section */
+}
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -540,6 +485,8 @@ section .container {
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
+
 
 
 
@@ -643,44 +590,44 @@ section .container {
   transform: translateY(-50%);
 }
 
-.education .education-item:nth-child(3)::after {
+/* .education .education-item:nth-child(3)::after {
   content: "";
   position: absolute;
-  width: 150px; /* Adjust size for specific icon */
-  height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/nvidia.png'); /* Path to your specific icon */
+  width: 150px; 
+  height: 150px; 
+  background-image: url('img/nvidia.png'); 
   background-size: contain;
   background-repeat: no-repeat;
-  left: -180px; /* Adjust positioning for the icon */
-  top: 50%; /* Center vertically */
+  left: -180px; 
+  top: 50%; 
   transform: translateY(-50%);
 }
 
 .education .education-item:nth-child(4)::after {
   content: "";
   position: absolute;
-  width: 150px; /* Adjust size for specific icon */
-  height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/ibm.png'); /* Path to your specific icon */
+  width: 150px; 
+  height: 150px; 
+  background-image: url('img/ibm.png'); 
   background-size: contain;
   background-repeat: no-repeat;
-  left: -180px; /* Adjust positioning for the icon */
-  top: 50%; /* Center vertically */
+  left: -180px; 
+  top: 50%; 
   transform: translateY(-50%);
 }
 
 .education .education-item:nth-child(5)::after {
   content: "";
   position: absolute;
-  width: 150px; /* Adjust size for specific icon */
-  height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/google.jpg'); /* Path to your specific icon */
+  width: 150px; 
+  height: 150px; 
+  background-image: url('img/google.jpg'); 
   background-size: contain;
   background-repeat: no-repeat;
-  left: -180px; /* Adjust positioning for the icon */
-  top: 50%; /* Center vertically */
+  left: -180px; 
+  top: 50%; 
   transform: translateY(-50%);
-}
+} */
 
 .education .education-item::before,
 .education .education-item::after {
@@ -812,6 +759,7 @@ section .container {
   color: #fff;
 }
 
+
 .experience .institution-logo {
   width: 150px;
   height: 150px;
@@ -880,7 +828,7 @@ section .container {
   position: absolute;
   width: 150px; /* Adjust size for specific icon */
   height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/aisociety.png'); /* Path to your specific icon */
+  background-image: url('img/yb.png'); /* Path to your specific icon */
   background-size: contain;
   background-repeat: no-repeat;
   left: -180px; /* Adjust positioning for the icon */
@@ -893,7 +841,7 @@ section .container {
   position: absolute;
   width: 150px; /* Adjust size for specific icon */
   height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/daraz.png'); /* Path to your specific icon */
+  background-image: url('img/aisociety.png'); /* Path to your specific icon */
   background-size: contain;
   background-repeat: no-repeat;
   left: -180px; /* Adjust positioning for the icon */
@@ -901,18 +849,18 @@ section .container {
   transform: translateY(-50%);
 }
 
-.experience .experience-item:nth-child(3)::after {
+/* .experience .experience-item:nth-child(3)::after {
   content: "";
   position: absolute;
-  width: 150px; /* Adjust size for specific icon */
-  height: 150px; /* Adjust size for specific icon */
-  background-image: url('img/daraz.png'); /* Path to your specific icon */
+  width: 150px; 
+  height: 150px; 
+  background-image: url('img/daraz.png'); 
   background-size: contain;
   background-repeat: no-repeat;
-  left: -180px; /* Adjust positioning for the icon */
-  top: 50%; /* Center vertically */
+  left: -180px; 
+  top: 50%; 
   transform: translateY(-50%);
-}
+} */
 
 .experience .experience-item::before,
 .experience .experience-item::after {
@@ -925,12 +873,48 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
-.skills .section-title {
-  text-align: center;
-  margin-bottom: 40px;
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
 }
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #FFD700;;
+}
+.skills .skills-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
 
 .skills .skills-section {
   display: grid;
@@ -1356,36 +1340,4 @@ section .container {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Credits
---------------------------------------------------------------*/
-.credits {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  padding: 15px;
-  text-align: right;
-  font-size: 13px;
-  color: #fff;
-  z-index: 999999;
-}
-
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-  }
-}
-
-.credits a {
-  color: #FFFFFF;
-  transition: 0.3s;
-}
-
-.credits a:hover {
-  color: #fff;
 }
