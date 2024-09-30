@@ -922,7 +922,7 @@ section .container {
   gap: 20px;
 }
 
-.skills .skills-column {
+.skills .skills-row {
   background: rgba(204, 204, 204, 0.1);
   padding: 20px;
   border-radius: 10px;
@@ -930,19 +930,19 @@ section .container {
   text-align: center;
 }
 
-.skills .skills-column h3 {
+.skills .skills-row h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
 
-.skills .skills-column ul {
+.skills .skills-row ul {
   list-style: none;
   padding: 0;
 }
 
-.skills .skills-column ul li {
+.skills .skills-row ul li {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 10px;
@@ -950,16 +950,20 @@ section .container {
   transition: color 0.3s ease;
 }
 
-.skills .skills-column ul li:hover {
+.skills .skills-row ul li:hover {
   color: #FFFFFF;
 }
 /*--------------------------------------------------------------
-# Portfolio
+# Project
 --------------------------------------------------------------*/
+/* .portfolio .portfolio-item {
+  margin-bottom: 30px;
+} */
 .portfolio .portfolio-item {
+  flex-basis: 32%; /* Adjust width to fit three items in one row with some space */
+  max-width: 32%;
   margin-bottom: 30px;
 }
-
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -984,10 +988,10 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover,
+/* .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   background: #FFD700;;
-}
+} */
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -1087,36 +1091,17 @@ section .container {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+/* 
+@media (min-width: 992px) { /* Large screens */
+  .portfolio .portfolio-item {
+    flex-basis: 48%; /* Adjusts the width of each project to fit 2 in a row */
+    max-width: 48%;
+  }
 }
-
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
-  bottom: 15px;
-  right: 15px;
-}
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -1183,7 +1168,7 @@ section .container {
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #FFD700;;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
@@ -1332,7 +1317,7 @@ section .container {
   background: #15bb62;
 }
 
-@keyframes animate-loading {
+/* @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -1340,4 +1325,4 @@ section .container {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
