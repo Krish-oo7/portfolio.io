@@ -1091,13 +1091,13 @@ section .container {
   transition: 0.3s;
 }
 
-/* 
-@media (min-width: 992px) { /* Large screens */
+ 
+@media (min-width: 992px) { 
   .portfolio .portfolio-item {
-    flex-basis: 48%; /* Adjusts the width of each project to fit 2 in a row */
+    flex-basis: 48%; 
     max-width: 48%;
   }
-}
+} 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
