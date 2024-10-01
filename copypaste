@@ -1,0 +1,533 @@
+  <article id="skills" class="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Check My Skills</p>
+      </div>
+  
+      <div class="skills-section">
+        <!-- Programming Languages -->
+        <div class="skills-row">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+                <p>C</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.java.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
+                <p>SQL</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+                <p>Python</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+                <p>Julia</p>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+                <p>CSS3</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.w3.org/html/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+                <p>HTML5</p>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+
+  
+        <!-- Libraries & Frameworks -->
+        <div class="skills-row">
+          <h3>Libraries  Frameworks</h3>
+          <ul>
+            <li>
+              <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+                <p>Pandas</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
+                <p>NumPy</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://pandas.pydata.org/" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
+                <p>TensorFlow</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://scikit-learn.org/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
+                <p>Scikit-learn</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://seaborn.pydata.org/" target="_blank" rel="noopener noreferrer">
+                <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/>
+                <p>PyTorch</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+                <p>NLTK</p>
+              </a>
+            </li>
+            <li>
+
+              <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+                <p>PySpark</p>
+              </a>
+            </li>
+            <li>
+
+              <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+                <p>Regex</p>
+                
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+                <p>Matplotlib</p>
+              </a>
+            </li>
+            <li>
+                            <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+                <p>Jira</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tools and Platforms -->
+        <div class="skills-row">
+          <h3>Tools  Platforms</h3>
+          <ul>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>Github</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>Docker</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>VS Code</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>AWS</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
+                <p>Microsoft Azure</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/>
+                <p>Power BI</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>Jupyter Notebook</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>Databricks</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+                <p>MS Office</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </article>
+  /* .portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  background: #FFD700;;
+} */
+
+---------
+.education .education-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .education .institution-logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .education .institution-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .education .education-item {
+    padding: 0 0 20px 20px; /* Adjust left padding to accommodate the icon */
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .education .education-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    /* color: #FFD700;; */
+    margin-bottom: 10px;
+  }
+  
+  .education .education-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .education .education-item ul {
+    padding-left: 20px;
+  }
+  
+  /* .education .education-item ul li {
+    padding-bottom: 10px;
+  } */
+  
+  .education .education-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .education .education-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #FFD700;;
+    border: 2px solid #FFD700;;
+  }
+  
+  .education .education-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/asu.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  .education .education-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/pdpu.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  /* .education .education-item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    background-image: url('img/nvidia.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
+  .education .education-item:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    background-image: url('img/ibm.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
+  .education .education-item:nth-child(5)::after {
+    content: "";
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    background-image: url('img/google.jpg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  } */
+  
+  .education .education-item::before,
+  .education .education-item::after {
+    z-index: 1; /* Ensure icons are above border-left */
+  }
+  
+  .education-section {
+    max-width: 1000px;
+    margin-left: 190px;
+  }
+  
+  /* Certifications */
+  
+  .education .certification-item {
+    padding: 0 0 20px 20px; /* Adjust left padding to accommodate the icon */
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .education .certification-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    /* color: #FFD700;; */
+    margin-bottom: 10px;
+  }
+  
+  .education .certification-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .education .certification-item ul {
+    padding-left: 20px;
+  }
+  
+  /* .education .education-item ul li {
+    padding-bottom: 10px;
+  } */
+  
+  .education .certification-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .education .certification-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #FFD700;;
+    border: 2px solid #FFD700;;
+  }
+  
+  .education .certification-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/nvidia.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  .education .certification-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/ibm.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  .education .certification-item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/google.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  .education .certification-item:nth-child(4)::after {
+    content: "";
+    position: absolute;
+    width: 150px; /* Adjust size for specific icon */
+    height: 150px; /* Adjust size for specific icon */
+    background-image: url('img/stanford.png'); /* Path to your specific icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -180px; /* Adjust positioning for the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+  }
+  
+  .education .certification-item::before,
+  .education .certification-item::after {
+    z-index: 1; /* Ensure icons are above border-left */
+  }
+  
+  
+  --------------------
+
+  // /**
+  //  * Mobile nav toggle
+  //  */
+  // on("click", ".mobile-nav-toggle", function (e) {
+  //   select("#navbar").classList.toggle("navbar-mobile");
+  //   this.classList.toggle("bi-list");
+  //   this.classList.toggle("bi-x");
+  // });
+
+  /**
+   * Scroll with ofset on links with a class name .scrollto
+   */
+  // on(
+  //   "click",
+  //   "#navbar .nav-link",
+  //   function (e) {
+  //     let section = select(this.hash);
+  //     if (section) {
+  //       e.preventDefault();
+
+  //       let navbar = select("#navbar");
+  //       let header = select("#header");
+  //       let sections = select("article", true);
+  //       let navlinks = select("#navbar .nav-link", true);
+
+  //       navlinks.forEach((item) => {
+  //         item.classList.remove("active");
+  //       });
+
+  //       this.classList.add("active");
+
+  //       if (navbar.classList.contains("navbar-mobile")) {
+  //         navbar.classList.remove("navbar-mobile");
+  //         let navbarToggle = select(".mobile-nav-toggle");
+  //         navbarToggle.classList.toggle("bi-list");
+  //         navbarToggle.classList.toggle("bi-x");
+  //       }
+
+  //       if (this.hash == "#header") {
+  //         header.classList.remove("header-top");
+  //         sections.forEach((item) => {
+  //           item.classList.remove("section-show");
+  //         });
+  //         return;
+  //       }
+
+  //       if (!header.classList.contains("header-top")) {
+  //         header.classList.add("header-top");
+  //         setTimeout(function () {
+  //           sections.forEach((item) => {
+  //             item.classList.remove("section-show");
+  //           });
+  //           section.classList.add("section-show");
+  //         }, 350);
+  //       } else {
+  //         sections.forEach((item) => {
+  //           item.classList.remove("section-show");
+  //         });
+  //         section.classList.add("section-show");
+  //       }
+
+  //       scrollto(this.hash);
+  //     }
+  //   },
+  //   true
+  // )();
+
+  // /**
+  //  * Skills animation
+  //  */
+  // let skilsContent = select(".skills-content");
+  // if (skilsContent) {
+  //   new Waypoint({
+  //     element: skilsContent,
+  //     offset: "80%",
+  //     handler: function (direction) {
+  //       let progress = select(".progress .progress-bar", true);
+  //       progress.forEach((el) => {
+  //         el.style.width = el.getAttribute("aria-valuenow") + "%";
+  //       });
+  //     },
+  //   });
+  // }
