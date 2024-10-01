@@ -189,7 +189,7 @@ h6 {
 */
 .navbar {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 35px; 
 }
 
 .navbar ul {
@@ -255,6 +255,28 @@ h6 {
 .navbar li:hover>a {
   color: #fff;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-left: 0px;
+  display: flex;
+  margin-top: 0;
+  padding: 20px;
+  height: fit-content;
+  width: 100%;
+  z-index: 1000;
+  background-color: #0A2F35; 
+  transition: 0.3s;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.sticky + * {
+  margin-top: 0px; 
+}
+
 
 /**
 * Mobile Navigation 
@@ -330,22 +352,7 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/* article {
-  position: absolute;
-  width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
-  transition: ease-in-out 0.4s;
-  z-index: 2;
-} */
-/* 
-section.section-show {
-  top: 100px;
-  bottom: auto;
-  opacity: 1;
-  padding-bottom: 45px;
-} */
+
 article {
   min-height: 100vh; 
   background-color: transparent;
@@ -457,8 +464,6 @@ article {
   font-size: 16px;
   color: #fff;
 }
-
-
 
 
 
@@ -862,6 +867,83 @@ article {
 # Project
 --------------------------------------------------------------*/
 
+.portfolio .portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h4 {
+  
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+ 
+}
+
+.portfolio-wrap {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  transition: 0.3s;
+  padding: 15px;
+  
+}
+.portfolio-item .portfolio-wrap {
+  background: rgba(255, 255, 255, 0.08);
+}
+.portfolio-wrap:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-description {
+  font-size: 16px;
+  margin-top: 20px;
+  
+  list-style-position: inside; 
+  padding-left: 0;
+}
+
+.project-description li {
+  margin-bottom: 5px; 
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+  }
+  
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 
 .portfolio .portfolio-item {
   flex-basis: 32%; 
   max-width: 32%;
@@ -976,7 +1058,7 @@ article {
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact

@@ -439,73 +439,65 @@
 
 
   <!--  Project Section  -->
+
   <article id="projects" class="portfolio">
     <div class="container">
-
       <div class="section-title">
         <h2>Projects</h2>
       </div>
-
+    
       <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+    
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        
+        <div class="portfolio-wrap">
           <center><h4>ASU Event Recommender System</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/asueve.png" class="img-fluid" alt="">
-          </div>
+          <img src="img/asueve.png" class="img-fluid" alt="ASU Event Recommender System">
+          <ul class="project-description">
+            <li>Developed an event recommender system for ASU, utilizing Python and Beautiful Soup to extract data on over 3,000 upcoming events from ASU's website </li>
+            <li>Deployed web app using Flask, allowing users to input preferences and receive personalized event recommendations </li>
+            <li>Designed the entire data pipeline, employing machine learning techniques to analyze user preferences and suggest
+              relevant events, enhancing campus engagement and user experience by 30% </li>
+          </ul>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <center><h4>Exploring Educationol Outcomes</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/edu.png" class="img-fluid" alt="">
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Wind Power Forcaasting using Machine Learning</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/wind.png" class="img-fluid" alt="">
-            
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <center><h4>SpaceX Falcon 9 Site Landing Prediction</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/spacex-landing.jpg" class="img-fluid" alt="">
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <center><h4>AI Mathematical Olympiad: Elevating Math Reasoning</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/aimo-math.jpg" class="img-fluid" alt="">
-           
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Skin Cancer Detection with 3D-TBP Processing</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/ai-skin-cancer-detection.jpg" class="img-fluid" alt="">
-            
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <center><h4>Haptic robotic device for telesurgery</h4></center>
-          <div class="portfolio-wrap">
-            <img src="img/robot-ai.jpg" class="img-fluid" alt="">
-          </div>
-        </div> -->
-
       </div>
-
+    
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        
+        <div class="portfolio-wrap">
+          <center><h4>Exploring Educational Outcomes</h4></center>
+          <img src="img/edu.png" class="img-fluid" alt="Exploring Educational Outcomes">
+          <ul class="project-description">
+            <li>Analyzed the U.S. Department of Education’s College Scorecard dataset (3,000+ rows, 50+ features) to identify key
+              factors influencing student success and inform data-driven strategies for educational institutions</li>
+            <li>Employed statistical techniques, including t-tests and ANOVA, using the SciPy library to perform hypothesis testing,
+              uncovering five actionable insights
+              </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        
+        <div class="portfolio-wrap">
+          <center><h4>Wind Power Forecasting using Machine Learning</h4></center>
+          <img src="img/wind.png" class="img-fluid" alt="Wind Power Forecasting">
+          <ul class="project-description">
+            <li>Conducted a comprehensive time series analysis to predict wind power on an hourly basis for a 15-day period</li>
+            <li>Utilized Long Short-Term Memory (LSTM) networks for accurate predictions, enhancing the model’s performance in
+              capturing temporal dependencies in the data with R2 score of 82
+              </li>
+            <li>Optimized maintenance scheduling, leading to an estimated 15% cost savings and improved resource utilization through
+              strategic planning based on accurate forecasts</li>
+          </ul>
+        </div>
+      </div>
+    
     </div>
-  </article>
+  </div>
+</article>
+<!-- End of Projects -->
+
   <!-- End of Projects -->
 
   <!-- Contact -->
@@ -561,6 +553,24 @@
         backSpeed: 65
       });
     });
+
+    
+      window.onscroll = function() {stickNavbar()};
+      
+      var navbar = document.getElementById("navbar");
+      
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      
+
+      function stickNavbar() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+          
   </script>
 
   <!-- Template Main JS File -->
