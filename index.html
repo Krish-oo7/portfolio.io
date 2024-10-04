@@ -600,28 +600,70 @@
       });
     });
 
-    
-      window.onscroll = function() {stickNavbar()};
-      
-      var navbar = document.getElementById("navbar");
-      
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-      
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+        navLinks.forEach(nav => nav.classList.remove('active')); 
+      this.classList.add('active'); 
+    });
+  });
+  // Get the navbar and all menu items
+var navbar = document.getElementById("navbar");
+var allMenuItems = document.querySelectorAll('.nav-link');
 
-      function stickNavbar() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
+// Function to handle sticky navbar and menu items display
+function stickNavbar() {
+  // Check screen width for mobile view
+  if (window.innerWidth <= 768) { 
+    // Stick the navbar to the bottom
+    navbar.classList.add("sticky-bottom");
+
+    // Show only the specified menu items for mobile view
+    allMenuItems.forEach(item => {
+      if (item.textContent.trim() === "About" || 
+          item.textContent.trim() === "Education" || 
+          item.textContent.trim() === "Experience" || 
+          item.textContent.trim() === "Skills" || 
+          item.textContent.trim() === "Projects") {
+        item.style.display = "flex"; // Show the specific menu items
+      } else {
+        item.style.display = "none"; // Hide other menu items
       }
-          
+    });
+  } else {
+    // For larger screens, remove sticky-bottom and show all menu items
+    navbar.classList.remove("sticky-bottom");
+    
+    // Ensure all menu items are displayed on larger screens
+    allMenuItems.forEach(item => {
+      item.style.display = "flex";
+    });
+  }
+}
+
+// Run the function on page load and when the window is resized
+window.onload = stickNavbar;
+window.onresize = stickNavbar;
+
+// Run the function when the user scrolls (for larger screens)
+window.onscroll = function() {
+  if (window.innerWidth > 768) {
+    if (window.pageYOffset > 0) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+};
+
+        
+  
   </script>
 
-  <!-- Template Main JS File -->
-  <script src="main.js"></script>
+  <script src="main.js">
+  
 
+  </script>
 </body>
 
 </html>

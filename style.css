@@ -8,8 +8,7 @@ body {
   position: relative; 
   margin: 0;
   padding: 0;
-
-  
+  box-sizing: border-box;
 }
 
 body::before {
@@ -131,6 +130,8 @@ h6 {
   }
 
   #header .container {
+    padding: 0;
+  margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,9 +166,13 @@ h6 {
 #header.header-top .container {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 #header.header-top .navbar {
+  margin: 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -190,6 +195,7 @@ h6 {
 .navbar {
   padding: 0;
   margin-top: 35px; 
+
 }
 
 .navbar ul {
@@ -229,7 +235,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:before {
+.navbar .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
@@ -237,29 +243,28 @@ h6 {
   bottom: -4px;
   left: 0;
   background-color: #FFD700;;
-  visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.navbar a:hover:before,
-.navbar li:hover>a:before,
-.navbar .active:before {
   visibility: visible;
+  transition: all 0.3s ease-in-out ;
+}
+.navbar .active::before {
   width: 25px;
+}
+.navbar a:hover::before,
+.navbar li:hover>a::before {
+  width: 25px;
+  visibility: visible;
 }
 
 .navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar .active:focus {
   color: #fff;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  margin-left: 0px;
+  left: 0px;
   display: flex;
   margin-top: 0;
   padding: 20px;
@@ -275,78 +280,52 @@ h6 {
 .sticky + * {
   margin-top: 0px; 
 }
-
-
-/**
-* Mobile Navigation 
-*/
-/* .mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
+/* Sticky navbar at the bottom for mobile */
+.sticky-bottom {
   position: fixed;
-  right: 15px;
-  top: 15px;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
-  .navbar ul {
-    display: none;
-  }
-}
-
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-  margin-top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0A2F35;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
+/* Sticky navbar at the bottom for mobile */
+@media (max-width: 768px) {
+  #navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0A2F35;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
 
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 45px;
-  left: 15px;
-  padding: 10px 0;
-  overflow-y: auto;
-  transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
+  /* Ensure the navbar links are properly aligned for mobile */
+  .navbar ul {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.navbar-mobile li {
-  padding: 12px 20px;
-}
+  .navbar li+li {
+    margin-left: 15px;
+  }
 
-.navbar-mobile li+li {
-  margin: 0;
-}
+  /* Resize text and icons for mobile view */
+  .navbar a {
+    font-size: 14px;
+  }
 
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  font-size: 16px;
-  position: relative;
-} */
+  /* Reduce margin between links */
+  .navbar ul li {
+    margin: 0 5px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -781,6 +760,8 @@ article {
 
 .skills .skills-section {
   display: flex;
+  justify-content: center; 
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -798,14 +779,21 @@ article {
   list-style: none;
   display: flex;  
   gap: 50px;
-  justify-content: center;
+  justify-content: center; 
+  align-items: center;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto; 
 }
 
 .skills .skills-row ul li {
   font-size: 16px;
   color: #fff;
   transition: color 0.3s ease;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills .skills-row ul li:hover {
@@ -825,10 +813,11 @@ article {
 @media (max-width: 768px) {
   .skills .skills-section {
     gap: 10px; 
+    justify-content: center;
   }
 
   .skills .skills-row {
-    padding: 15px; 
+     padding: 15px;  
   }
 
   .skills .skills-row ul {
@@ -854,6 +843,7 @@ article {
 
   .skills .skills-row ul li {
     font-size: 12px;
+    justify-content: center;
   }
 
   .skills .skills-row img {
