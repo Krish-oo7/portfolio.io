@@ -323,7 +323,7 @@ h6 {
 
   /* Reduce margin between links */
   .navbar ul li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 
@@ -448,6 +448,17 @@ article {
 /*--------------------------------------------------------------
 # Education
 --------------------------------------------------------------*/
+
+.education, .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.education-item p, .experience-item p, .education-item ul, .experience-item ul {
+  text-align: justify;
+}
+
 .education .education-title {
   font-size: 26px;
   font-weight: 700;
@@ -690,9 +701,6 @@ article {
   padding-left: 20px;
 }
 
-/* .experience .experience-item ul li {
-  padding-bottom: 10px;
-} */
 
 .experience .experience-item:last-child {
   padding-bottom: 0;
@@ -706,7 +714,7 @@ article {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #FFD700;;
+  background: #FFD700;
   border: 2px solid #FFD700;;
 }
 
@@ -744,6 +752,48 @@ article {
 .experience-section {
   max-width: 1000px;
   margin-left: 190px;
+}
+
+
+
+@media (max-width: 768px) {
+  .education-section, .experience-section {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .education .education-item, .experience .experience-item {
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: none;
+    position: relative;
+  }
+
+  .education .education-item::before, .experience .experience-item::before {
+    display: none; /* Hide the yellow circle on mobile */
+  }
+
+  .education .education-item h4, .experience .experience-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .education .education-item h5, .experience .experience-item h5 {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .education .education-item ul, .experience .experience-item ul {
+    padding-left: 10px;
+  }
+
+  /* Hide logos on mobile */
+  .education .education-item:nth-child(1)::after,
+  .education .education-item:nth-child(2)::after,
+  .experience .experience-item:nth-child(1)::after,
+  .experience .experience-item:nth-child(2)::after {
+    display: none; /* Hide the logos */
+  }
 }
 
 /*--------------------------------------------------------------
@@ -908,7 +958,8 @@ article {
 .project-description {
   font-size: 16px;
   margin-top: 20px;
-  
+  text-align: justify;
+
   list-style-position: inside; 
   padding-left: 0;
 }
@@ -936,7 +987,7 @@ article {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info-box {
+/* .contact .info-box {
   color: #444444;
   padding: 20px;
   width: 100%;
@@ -983,5 +1034,16 @@ article {
 
 .contact .info-box .social-links a:hover {
   color: #FFD700;;
-}
+} */
 
+/*--------------------------------------------------------------
+footer
+--------------------------------------------------------------*/
+footer{
+  border-top-style: solid; 
+  border-top-width: 1px; 
+  border-color: #b6bdca8f;
+  margin-bottom:25px; 
+  padding: 20px 0; 
+  text-align: center;
+}
