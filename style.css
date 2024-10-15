@@ -364,6 +364,46 @@ h6 {
   
 }
 
+/* @media (min-width: 992px) { 
+  .spacer {
+    height: 100px; 
+    margin: 40px 0; 
+  }
+} */
+
+.home-button-container {
+  position: fixed;   
+  bottom: 65px;     
+  right: 20px;      
+  z-index: 999;     
+}
+
+.home-button {
+  display: flex;                  
+  justify-content: center;        
+  align-items: center;            
+  width: 60px;                    
+  height: 60px;                   
+  background-color: #0A2F35;     
+  color: #ffffff;                 
+  border-radius: 30px;           
+  text-decoration: none;          
+  font-size: 24px;               
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.home-button:hover {
+  background-color: #0A2F35;     
+  transform: scale(1.1);          
+}
+
+@media (min-width: 769px) {
+  .home-button-container {
+    display: none; /* Hide the button on larger screens */
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -375,6 +415,7 @@ article {
   background-color: transparent;
   padding: 20px;
 }
+
 
 
 @media (max-width: 768px) {
@@ -501,7 +542,7 @@ article {
 .education .education-title {
   font-size: 26px;
   font-weight: 700;
-  margin-top: 20px;
+  
   margin-bottom: 20px;
   color: #fff;
 }
@@ -789,6 +830,7 @@ article {
 }
 
 .experience-section {
+
   max-width: 1000px;
   margin-left: 190px;
 }
@@ -998,14 +1040,11 @@ article {
   font-size: 16px;
   margin-top: 20px;
   text-align: justify;
-
+  list-style-type: none;
   list-style-position: inside; 
   padding-left: 0;
 }
 
-.project-description{
-  list-style-type: none;
-}
 
 .project-description li {
 

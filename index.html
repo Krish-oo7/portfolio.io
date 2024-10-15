@@ -66,9 +66,10 @@
     </div>
   </header>
   <!-- End Header -->
+  <!-- <div class="spacer"></div> -->
 
   <!-- About -->
-  <article id="about" class="about">
+  <article id="about" class="about" >
     <div class="about-me container">
 
       <div class="section-title">
@@ -215,7 +216,7 @@
     </div>
   </article>
   <!-- End of Education -->
-
+ 
   <!-- Experience Section -->
    <article id="experience" class="experience">
     <div class="container">
@@ -265,7 +266,7 @@
     </div>
   </article>
   <!-- End of  Experience  -->
-
+ 
   <!-- Skills -->
   <article id="skills" class="skills">
     <div class="container">
@@ -442,9 +443,8 @@
   </article>
   <!--End of Skills -->
 
-
+ 
   <!--  Project Section  -->
-
   <article id="projects" class="portfolio">
     <div class="container">
       <div class="section-title">
@@ -566,6 +566,7 @@
   </div>
 </article>
 
+
 <!-- End of Projects -->
 <!-- Footer-->
 <footer>
@@ -580,7 +581,16 @@
     </div>
   </div>
 </footer>
+
 <!-- End of footer-->
+<!-- Your existing HTML code -->
+
+<div class="home-button-container">
+  <a href="#header" class="home-button">
+    <i class="bx bx-home"></i> <!-- You can use any icon here -->
+  </a>
+</div>
+
 
   <!-- Contact -->
   <!-- <article id="contact" class="contact">
@@ -626,75 +636,85 @@
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor/venobox/venobox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      var typed = new Typed('.typing', {
-        strings: ["Data Scientist", "Data Analyst", "ML Engineer"],
-        loop: true,
-        typeSpeed: 65,
-        backSpeed: 65
-      });
-    });
-
-      const navLinks = document.querySelectorAll('.nav-link');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-        navLinks.forEach(nav => nav.classList.remove('active')); 
-      this.classList.add('active'); 
-    });
-  });
-  // Get the navbar and all menu items
-var navbar = document.getElementById("navbar");
-var allMenuItems = document.querySelectorAll('.nav-link');
-
-// Function to handle sticky navbar and menu items display
-function stickNavbar() {
-  // Check screen width for mobile view
-  if (window.innerWidth <= 768) { 
-    // Stick the navbar to the bottom
-    navbar.classList.add("sticky-bottom");
-
-    // Show only the specified menu items for mobile view
-    allMenuItems.forEach(item => {
-      if (item.textContent.trim() === "About" || 
-          item.textContent.trim() === "Education" || 
-          item.textContent.trim() === "Experience" || 
-          item.textContent.trim() === "Skills" || 
-          item.textContent.trim() === "Projects") {
-        item.style.display = "flex"; // Show the specific menu items
-      } else {
-        item.style.display = "none"; // Hide other menu items
-      }
-    });
-  } else {
-    // For larger screens, remove sticky-bottom and show all menu items
-    navbar.classList.remove("sticky-bottom");
-    
-    // Ensure all menu items are displayed on larger screens
-    allMenuItems.forEach(item => {
-      item.style.display = "flex";
-    });
-  }
-}
-
-// Run the function on page load and when the window is resized
-window.onload = stickNavbar;
-window.onresize = stickNavbar;
-
-// Run the function when the user scrolls (for larger screens)
-window.onscroll = function() {
-  if (window.innerWidth > 768) {
-    if (window.pageYOffset > 0) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-};
-
-        
   
-  </script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to check if the user is at the top of the page
+        function checkScrollPosition() {
+            const homeButtonContainer = document.querySelector('.home-button-container');
+
+      
+            if (window.pageYOffset <= 100) {
+                homeButtonContainer.style.display = 'none'; 
+            } else {
+                homeButtonContainer.style.display = 'flex'; 
+            }
+        }
+
+        // Initialize typing effect on load
+        var typed = new Typed('.typing', {
+            strings: ["Data Scientist", "Data Analyst", "ML Engineer"],
+            loop: true,
+            typeSpeed: 65,
+            backSpeed: 65
+        });
+
+        // Navbar link active state toggling
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(nav => nav.classList.remove('active')); 
+                this.classList.add('active'); 
+            });
+        });
+
+        var navbar = document.getElementById("navbar");
+        var allMenuItems = document.querySelectorAll('.nav-link');
+
+        // Function to handle sticky navbar and menu items display
+        function stickNavbar() {
+            if (window.innerWidth <= 768) { 
+                navbar.classList.add("sticky-bottom");
+
+                allMenuItems.forEach(item => {
+                    if (item.textContent.trim() === "About" || 
+                        item.textContent.trim() === "Education" || 
+                        item.textContent.trim() === "Experience" || 
+                        item.textContent.trim() === "Skills" || 
+                        item.textContent.trim() === "Projects") {
+                        item.style.display = "flex"; 
+                    } else {
+                        item.style.display = "none"; 
+                    }
+                });
+            } else {
+                navbar.classList.remove("sticky-bottom");
+                
+                allMenuItems.forEach(item => {
+                    item.style.display = "flex";
+                });
+            }
+        }
+
+        stickNavbar();
+        window.onresize = stickNavbar;
+
+        // Run the function when the user scrolls
+        window.onscroll = function() {
+            if (window.innerWidth > 768) {
+                if (window.pageYOffset > 0) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+            checkScrollPosition(); 
+        };
+        checkScrollPosition();
+    });
+</script>
+
 
   <script src="main.js">
   
