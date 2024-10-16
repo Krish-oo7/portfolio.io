@@ -43,7 +43,18 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+@media (max-width: 991px) {
+  .desktop-only {
+    display: none;
+  }
+}
 
+/* Show the br on desktop screens (e.g., larger than 992px) */
+@media (min-width: 992px) {
+  .desktop-only {
+    display: inline;
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -416,8 +427,6 @@ article {
   background-color: transparent;
   padding: 20px;
 }
-
-
 
 @media (max-width: 768px) {
   article {
@@ -999,19 +1008,17 @@ article {
 .portfolio-item {
   display: flex;
   flex-direction: column;
-
+  flex-basis: calc(35.5% - 30px);
 }
 
 .portfolio-item img {
   width: 100%;
-  height: 50%;
+  height: 40%;
   border-radius: 8px;
-
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item h4 {
-  
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
@@ -1044,6 +1051,7 @@ article {
   list-style-type: none;
   list-style-position: inside; 
   padding-left: 0;
+  flex-grow: 1;
 }
 
 
@@ -1054,17 +1062,29 @@ article {
 
 }
 
-
+.project-skills {
+  margin-top: auto;  
+  font-size: 16px; 
+  /* background-color: rgba(255, 255, 255, 0.1); 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  
+}
 @media (max-width: 768px) {
   .portfolio-container {
     flex-direction: column;
+    
   }
-  
-  .portfolio-item {
+  .portfolio-wrap{
     margin-bottom: 20px;
+  }
+  .portfolio-item {
+    flex-basis: 100%;    
   }
   
   .portfolio-item img {
+    
     width: 100%;
     height: auto;
   }
