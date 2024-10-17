@@ -418,19 +418,61 @@ h6 {
   transform: scale(1.1);           
 }
 .about-button-container{
-  bottom: 440px;
+  bottom: 140px;
 }
 .edu-button-container {
-  bottom: 365px; 
+  bottom: 215px; 
 }
 .exp-button-container {
   bottom: 290px; 
 }
 .sk-button-container {
-  bottom: 215px; 
+  bottom: 365px; 
 }
 .pr-button-container {
-  bottom: 140px; 
+  bottom: 440px; 
+}
+
+.custom-tooltip{
+  visibility: hidden; /* Hide by default */
+  width: auto;
+  background-color: #0a2f35;
+  color: #FFD700;
+  font-size: 16px; 
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+.sk-button-container .custom-tooltip{
+  right: 28px;
+}
+.home-button-container .custom-tooltip, .about-button-container .custom-tooltip{
+  right:25px;
+}
+.pr-button-container .custom-tooltip{
+  right: 16px;
+}
+.edu-button-container .custom-tooltip {
+  right: 10px;
+}
+.exp-button-container .custom-tooltip{
+  right: 6px;
+}
+
+/* Show the tooltip on hover */
+.home-button:hover .custom-tooltip,
+.about-button:hover .custom-tooltip,
+.edu-button:hover .custom-tooltip,
+.exp-button:hover .custom-tooltip,
+.pr-button:hover .custom-tooltip,
+.sk-button:hover .custom-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Hide the About button on mobile view */
