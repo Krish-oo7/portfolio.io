@@ -58,6 +58,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   background-color: transparent; 
   background-size: cover;
@@ -302,25 +303,7 @@ h6 {
   color: #fff;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0px;
-  display: flex;
-  margin-top: 0;
-  padding: 20px;
-  height: fit-content;
-  width: 100%;
-  z-index: 1000;
-  background-color: #0A2F35; 
-  justify-content: center;
-  text-decoration: none;
-}
 
-
-.sticky + * {
-  margin-top: 0px; 
-}
 /* Sticky navbar at the bottom for mobile */
 .sticky-bottom {
   position: fixed;
@@ -376,12 +359,6 @@ h6 {
   
 }
 
-/* @media (min-width: 992px) { 
-  .spacer {
-    height: 100px; 
-    margin: 40px 0; 
-  }
-} */
 
 .home-button-container {
   position: fixed;   
@@ -415,7 +392,54 @@ h6 {
     display: none; /* Hide the button on larger screens */
   }
 }
+ 
+.about-button-container,.edu-button-container,.exp-button-container,.sk-button-container,.pr-button-container{
+  position: fixed;
+  right: 20px;   
+  z-index: 999;  
+}
+.about-button,.edu-button,.exp-button,.sk-button,.pr-button{
+  display: flex;                   
+  justify-content: center;        
+  align-items: center;             
+  width: 60px;                    
+  height: 60px;                   
+  background-color: #0A2F35;     
+  color: #ffffff;                  
+  border-radius: 30px;            
+  text-decoration: none;          
+  font-size: 24px;                
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, transform 0.3s; 
+}
+/* Hover effect for About button */
+.about-button,.edu-button,.exp-button,.sk-button,.pr-button {
+  background-color: #0A2F35;     
+  transform: scale(1.1);           
+}
+.about-button-container{
+  bottom: 440px;
+}
+.edu-button-container {
+  bottom: 365px; 
+}
+.exp-button-container {
+  bottom: 290px; 
+}
+.sk-button-container {
+  bottom: 215px; 
+}
+.pr-button-container {
+  bottom: 140px; 
+}
 
+/* Hide the About button on mobile view */
+@media (max-width: 768px) {
+  .about-button-container,.edu-button-container,.exp-button-container,.sk-button-container,.pr-button-container{
+      display: none;
+  }
+  
+}
 
 
 /*--------------------------------------------------------------
@@ -1002,6 +1026,7 @@ article {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+  
 }
 
 
