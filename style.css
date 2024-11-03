@@ -1147,7 +1147,7 @@ article {
 }
 
 .project-button button {
-  background-color: #2A9D8F; /* Button background color */
+  background-color: #21867A; /* Button background color */
   color: #fff; /* Button text color */
   padding: 10px 15px;
   border: none;
@@ -1158,7 +1158,7 @@ article {
 }
 
 .project-button button:hover {
-  background-color: #21867A; /* Darker shade on hover */
+  background-color: #2A9D8F ; /* Darker shade on hover */
 }
 
 @media (max-width: 768px) {
