@@ -1138,6 +1138,28 @@ article {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   
 }
+
+/* Project Button Styling */
+.project-button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.project-button button {
+  background-color: #2A9D8F; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-button button:hover {
+  background-color: #21867A; /* Darker shade on hover */
+}
+
 @media (max-width: 768px) {
   .portfolio-container {
     flex-direction: column;
