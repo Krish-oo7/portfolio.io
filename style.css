@@ -900,6 +900,19 @@ article {
   transform: translateY(-50%);
 }
 
+.experience .experience-item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 150px; 
+  height: 150px; 
+  background-image: url('img/yb.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -180px; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
 .experience .experience-item::before,
 .experience .experience-item::after {
   z-index: 1; 
