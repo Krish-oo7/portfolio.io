@@ -874,7 +874,7 @@ article {
   border: 2px solid #FFD700;;
 }
 
-.experience .experience-item:nth-child(1)::after {
+.experience .experience-item:nth-child(3)::after {
   content: "";
   position: absolute;
   width: 150px; 
@@ -900,7 +900,7 @@ article {
   transform: translateY(-50%);
 }
 
-.experience .experience-item:nth-child(3)::after {
+.experience .experience-item:nth-child(1)::after {
   content: "";
   position: absolute;
   width: 150px; 
